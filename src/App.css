@@ -31,7 +31,30 @@
   padding: 20px;
 }
 
+.div-border label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.div-border input[type="text"],
+.div-border input[type="number"] {
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #d1d5db;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+.div-border input[type="text"]:focus,
+.div-border input[type="number"]:focus {
+}
+
 .div-border .form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .div-border .price-value {
