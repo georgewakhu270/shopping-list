@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
+import "./App.css";
 
 export default function App() {
   const [items, setItems] = useState([]);
@@ -10,7 +11,7 @@ export default function App() {
     <div className="App">
       <div>
         <h1>Shopping List</h1>
-        <div>
+        <div className="border-2 border-black rounded-md div-border">
           <form>
             <label>Item Name</label>
             <input type="text" />
