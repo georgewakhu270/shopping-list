@@ -11,17 +11,19 @@ export default function App() {
     <div className="App">
       <div>
         <h1>Shopping List</h1>
-        <div className="border-2 border-black rounded-md div-border">
-          <form>
-            <label>Item Name</label>
-            <input type="text" />
-            <label>Price</label>
-            <input type="number" />
-            <label>Quantity</label>
-            <input type="number" />
-            <p>The price is </p>
-            <button>submit</button>
-          </form>
+        <div className="form-div">
+          <div className="div-border">
+            <form>
+              <label>Item Name</label>
+              <input type="text" />
+              <label>Price</label>
+              <input type="number" />
+              <label>Quantity</label>
+              <input type="number" />
+              <p>The price is </p>
+              <button>submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
