@@ -8,6 +8,20 @@
   border: 1px solid #e5e7eb;
 }
 
+.div-border h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #374151;
+  text-align: center;
+}
+
+.div-border form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .form-div {
   margin: 0;
   display: flex;
@@ -15,4 +29,13 @@
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+}
+
+.div-border .form-group {
+}
+
+.div-border .price-value {
+}
+
+.div-border button {
 }
