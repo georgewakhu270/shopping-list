@@ -13,15 +13,22 @@ export default function App() {
   const addItem = (e) => {
     e.preventDefault();
     setItems([...items, { name: names, quantity: quantity, price: price }]);
-    setTotalPrice(totalPrice + price);
+    setTotalPrice(
+      items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+    );
     setPopup(false);
+    setNames("");
+    setQuantity(1);
+    setPrice(0.0);
   };
 
   return (
     <div className="App">
       <div>
         <h1>Shopping List</h1>
-        <button onClick={() => setPopup(true)}>+</button>
+        <button onClick={() => setPopup(true)} className="open-popup-btn">
+          +
+        </button>
         {popup && (
           <div className="form-div">
             <div className="div-border">
@@ -64,7 +71,9 @@ export default function App() {
                     <span className="price-value">$ {price * quantity}</span>
                   </p>
                 </div>
-                <button type="submit">submit</button>
+                <button type="submit" className="submit-button">
+                  submit
+                </button>
               </form>
             </div>
           </div>
